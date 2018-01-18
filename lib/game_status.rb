@@ -31,5 +31,7 @@ def full?(board)
 end
 
 def draw?(board)
-  
+  board.any? do |index|
+    index != " "
+  end
 end
