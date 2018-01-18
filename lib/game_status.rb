@@ -29,3 +29,7 @@ def full?(board)
     index != " "
   end
 end
+
+def draw?(board)
+  
+end
