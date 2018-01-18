@@ -19,7 +19,10 @@ def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
     if board[win_combination[0]] != " " && board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
       return win_combination 
-    else false
+    elsif board[win_combination[0]] != board[win_combination[1]] && board[win_combination[0]] != board[win_combination[2]]
+      return false
+    else board[win_combination[0]] == " " && board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
+      return false
     end
   end
 end
