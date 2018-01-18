@@ -35,3 +35,7 @@ def draw?(board)
     index != " " && won?(board) == false
   end
 end
+
+def over?(board)
+  won?(board) != false || draw?(board) != false || full?(board) != false
+end
