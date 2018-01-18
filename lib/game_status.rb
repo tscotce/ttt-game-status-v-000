@@ -32,6 +32,6 @@ end
 
 def draw?(board)
   board.any? do |index|
-    index != " "
+    index != " " && won?(board) == false
   end
 end
