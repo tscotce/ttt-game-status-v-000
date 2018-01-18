@@ -31,8 +31,7 @@ def full?(board)
 end
 
 def draw?(board)
-  board.any? do |index|
-    index != " " && won?(board) == false
+  full?(board) == true && won?(board) == false
   end
 end
 
