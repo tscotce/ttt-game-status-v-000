@@ -26,7 +26,7 @@ end
 
 def full?(board)
   board.none? do |index|
-    index != " "
+    index == " "
   end
 end
 
