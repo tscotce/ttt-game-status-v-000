@@ -28,4 +28,5 @@ def full?(board)
   board.any? do |index|
     index != " "
   end
+  return false
 end
